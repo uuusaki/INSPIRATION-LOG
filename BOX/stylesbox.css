@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Sawarabi Mincho"; 
+    line-height: 1;
+    /*background-color: #002D5e; */
+    background-image: linear-gradient(#020731, #7fc1d0);
+    min-height: 100vh;
+    color: #dce5ec;
+    width: 100%;
+}
+
+input{
+    display: inline;
+}
+label{
+    color: #605D54;
+}
+a{
+    text-decoration: none;
+    color: #dce5ec;
+}
+a:visited{
+    color:#dce5ec;
+    text-decoration: none;
+}
+a:active{
+    color: #dce5ec;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*ヘッダー*/
+.logo{
+    width: 250px;
+    margin: 7px 7px;
+    padding: 2px;
+}
+.navi{
+    display: flex;
+}
+.navi li{
+    list-style-type: none;
+    padding: 14px;
+}
+.navi a{
+    padding: 10px;
+    font-size: 0.8rem;
+    border: none 1px;
+    border-radius : 5%;
+    transition    : .3s;
+}
+.navi a:hover{
+    border:dotted 1px #dce5ec;
+}
+.tytle{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.body{
+    margin: 0 auto;
+}
+/*Welcomeページ*/
+.arts2{
+    height:  100%;
+}
+.contents{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+.content1{
+   
+
+}
+.content2{
+    display: block;
+    text-align: center;
+    color: #8dabc5;
+    height: 341px;
+   line-height: 1.7;
+   border-radius : 5%;
+    transition    : .3s;
+}
+.content2 p{
+    margin: 10%;
+
+}
+.content2 a:hover{
+    border: dotted 2px #8dabc5;
+    padding: 7px;
+}
+.content2 label{
+    color: #8dabc5;
+}
+#Uid{
+    opacity: 0.7;
+    background-color: #dce5ec;
+    color: #020731;
+    font-size: large;
+}
+.buttonU{
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 11pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 10px 51px;   /* 余白       */
+    background    : rgb(0, 0, 0, 0);     /* 背景色     */
+    color         : #dce5ec;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    border        : 2px dotted #dce5ec;    /* 枠の指定 */
+    margin: 15px;
+}
+.buttonU:hover {
+    color         : #dce5ec;     /* 背景色     */
+    background    : #020731;     /* 文字色     */
+    border        : 2px dotted #020731;
+  }
+
+/*INDEX*/
+.contentsIndex{
+    padding-right: 15%;
+    padding-left: 15%;
+    color: #8dabc5;
+    margin: 0 auto;
+}
+.contentsIndex label{
+    color: #8dabc5;
+}
+.base01 {
+    padding: 10px;
+    margin: 10px;
+}
+.base01 textarea{
+    opacity: 0.7;
+    background-color: #dce5ec;
+    color: #020731;
+    font-size: large;
+    width: 70%;
+}
+.base01 textarea:focus{
+    border:dotted 1px #dce5ec;
+}
+.base02 {
+    padding: 10px;
+    margin: 10px;
+}
+.base02 input{
+    opacity: 0.7;
+    background-color: #dce5ec;
+    color: #020731;
+    font-size: large;
+    width: 65%;
+}
+.base03 {
+    padding: 10px;
+    margin: 10px;
+}
+.base03 input{
+    opacity: 0.7;
+    background-color: #dce5ec;
+    color: #020731;
+    font-size: large;
+}
+.genre {
+    padding: 10px;
+    margin: 10px;
+}
+.genre label{
+    padding: 10px 8px;
+}
+.genre input{
+    display: none;
+}
+.genre ul{
+   list-style-type: none; 
+   display: flex;
+   flex-wrap: wrap;
+
+}
+.genre li{
+    padding: 10px 8px;
+    border-radius : 5%;
+    transition    : .3s;
+    border: dotted 2px rgb(0, 0, 0, 0);
+}
+.genre li:hover{
+    border: dotted 2px #8dabc5;
+    padding: 10px 8px;
+}
+.genre1:checked + .genre2{
+    border: dotted 2px #8dabc5;
+    background-color: #8dabc5;
+    color: #020731;
+    width: 90%;
+    height: 90%;
+}
+
+.more{
+    width: 100%;
+    color: #dce5ec;
+}
+.more label{
+    padding: 10px;
+     color: #dce5ec;
+}
+
+.accordion{
+    display: none;
+}
+.accordion:checked{
+    opacity: 0.2;
+}
+
+.more .morecontents{
+    display: none; 
+    transition    : .3s;         
+}
+
+.accordion:checked + .morecontents{
+    display:block;
+    margin: 0px;
+    padding: 10px; 
+    transition    : .3s;         /* なめらか変化 */  
+}
+
+.morecontents ul{
+    list-style-type: none;
+    display: flex;
+}
+.morecontents li{
+   display: flex;
+   padding: 10px 8px; 
+   border-radius : 5%;
+    transition    : .3s;
+}
+.morecontents li:hover{
+    border: dotted 2px #8dabc5;
+    padding: 10px 8px;
+}
+.again1{
+    display: none;
+}
+.again2{
+    padding: 10px 8px;
+}
+.again1:checked + .again2{
+    border: dotted 2px #dce5ec;
+    background-color: #dce5ec;
+    color: #020731;
+    padding: 10px 8px;
+}
+#my{
+    width: 65%;
+    opacity: 0.7;
+    background-color: #dce5ec;
+    color: #020731;  
+}
+.more textarea{
+    opacity: 0.7;
+    background-color: #dce5ec;
+    color: #020731;  
+    width: 70%;
+    height: 100px;
+    font-size: large;
+}
+.more textarea:focus{
+    border:dotted 1px #dce5ec;
+}
+.submit{
+    text-align: center;
+}
+.button{
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 11pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 10px 51px;   /* 余白       */
+    background    : rgb(0, 0, 0, 0);     /* 背景色     */
+    color         : #dce5ec;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    border        : 2px dotted #dce5ec;    /* 枠の指定 */
+    margin: 15px;
+  }
+  .button:hover {
+    color         : #dce5ec;     /* 背景色     */
+    background    : #020731;     /* 文字色     */
+    border        : 2px dotted #020731;
+  }
+
+
+/*success*/
+.success{
+    display: flex;
+}
+.logged{
+    padding: 3px;
+    text-align: center;   
+}
+.mado{
+    width: 400px;
+}
+.under a{
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 11pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 10px 51px;   /* 余白       */
+    background    : rgb(0, 0, 0, 0);     /* 背景色     */
+    color         : #dce5ec;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    border        : 2px dotted #dce5ec;    /* 枠の指定 */
+    margin: 15px;
+}
+.under a:hover{
+    color         : #dce5ec;     /* 背景色     */
+    background    : #020731;     /* 文字色     */
+    border        : 2px dotted #020731; 
+}
+
+/*mypage*/
+.past{
+    display: grid ;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 10px;
+}
+.past1{ 
+   width: 98%;
+   
+   text-align: center;
+   margin: 10px;
+   opacity: 0.5;
+   background-color: #dce5ec;
+   color: #020731;  
+   border-radius : 5%; 
+   align-content: space-between; 
+}
+.past2{
+   margin: 8px;
+}
+.past1 input{
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 11pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 3px 6px;   /* 余白       */
+    background    :#dce5ec;     /* 背景色     */
+    color         : #020731;     /* 文字色     */
+    border: 2px rgb(0, 0, 0, 0);
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */ 
+    margin: auto auto  10px auto;
+}
+.past1 input:hover {
+    color         : #020731;     /* 背景色     */
+    background    : #dce5ec;     /* 文字色     */
+    border        : 2px dotted #020731;
+}
+
+/*edit*/
+.editpage{
+    background-color: #efd7a3;
+}
